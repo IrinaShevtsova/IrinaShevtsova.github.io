@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Poppins');
+
+html,body{
+    margin: 0;
+    padding: 0;
+    background: #FFFFEA;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+/* NAVIGATION */
+
+#mainNavbar {
+    width: 100%;
+    padding: 1% 0% 0 0;
+}
+
+#mainNavbar .nav-link{
+    color: #575757;
+    border-bottom: 3px solid #ee6263;
+    font-size: 15px;
+    padding: 0 1em;
+}
+
+#mainNavbar .nav-link:hover{
+    color: #ee6263;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar.scrolled {
+    background: #FFFFEA;
+    transition: background 1000ms;
+}
+
+/* HOME SECTION */
+
+.home-logo {
+    padding: 4rem 1rem 1rem 1rem;
+}
+
+
+/* FILTERS ---------------*/
+
+.container {
+    padding-top: 2rem;
+}
+
+ul.filters{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 30px 0;
+}
+
+ul.filters > li{
+    list-style: none;
+    display: inline-block;
+}
+
+ul.filters > li > a{
+    display: block;
+    color: #575757;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-bottom: 3px solid #FF8181;
+}
+
+ul.filters > li > a:hover{
+    border-bottom: 3px solid transparent;
+    color: #FF8181;
+}
+
+ul.filters > li.active > a{
+    color: #FF8181;
+    border-bottom: 3px solid transparent;
+}
+
+.tz-gallery .thumbnail:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+.tz-gallery .lightbox img {
+    border-radius: 4px 4px 0 0;
+}
+
+.tz-gallery .caption{
+    padding: 15px;
+    text-align: center;
+}
+
+.tz-gallery .caption h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.tz-gallery .caption p {
+    font-size: 15px;
+    color: #7b7d7d;
+    margin: 0;
+}
+
+
+/* ARTIST SECTION */
+
+#artist {
+    padding-top: 1rem;
+}
+
+.personal-photo {
+    width: 60%;
+}
+
+.lft-block h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    color: #414141;
+}
+
+.lft-block h5{
+    font-size: 21px;
+    padding: 20px 0;
+    margin: 0;
+    color: #414141;
+}
+
+.social a{
+    padding: 3%;
+}
+
+.social-icon {
+    width: 35px;
+    height: 35px;
+}
+
+.rt-block {
+    padding-top: 2rem;
+}
+
+.text-block {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.rt-block p{
+    font-family: "poppins";
+    font-size: 15px;
+}
+  
+.about-smlogo {
+    padding: 1rem;
+    width: 70%;
+}
+
+.rt-block img{
+    border-bottom: 3px solid #ee6263;
+    padding: 10px;
+}
+
+.rt-block h5{
+    padding-top: 2rem;
+    color: #414141;
+    font-size: 18px;
+}
+  
+  
+.education p{
+    font-family: "poppins";
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+#ftr-p{
+    margin: 20px;
+}
+
+
+@media (min-width: 768px) {
+    
+    #mainNavbar {
+        padding-left: 11rem;
+    }
+
+    #mainNavbar:before {
+        content : "";
+        position: absolute;
+        left    : 0;
+        bottom  : 0;
+        height  : 1px;
+        width   : 24%; 
+        border-bottom: 3px solid #ee6263;
+    }
+
+    #mainNavbar .nav-link{
+        font-size: 25px;
+    }
+
+    .empty-box {
+        width: 7rem;
+        border-bottom: 3px solid #ee6263;
+    }
+
+    .logoSm {
+        width: 60%;
+    }
+
+    #artist {
+        padding-top: 5rem;
+    }
+
+    .personal-photo {
+        width: 50%;
+    }
+
+    .social-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .lft-block h5 {
+        font-size: 28px;
+    }
+
+    .rt-block {
+        padding: 3rem;
+    }
+    
+    .rt-block p{
+        font-size: 23px;
+    }
+      
+    .about-smlogo {
+        padding: 1rem;
+    }
+    
+    .rt-block img{
+        width: 60%;
+    }
+    
+    .rt-block h5{
+        padding-top: 2rem;
+        color: #414141;
+        font-size: 28px;
+    }
+
+    ul.filters > li > a{
+        font-size: 25px;
+    }
+}
+
+
+@media (min-width: 991px) {
+
+    #mainNavbar {
+        padding-left: 16rem;
+    }
+
+    #mainNavbar .nav-link{
+        font-size: 30px;
+    }
+
+    #mainNavbar:before {
+        width   : 26%; 
+    }
+
+    .empty-box {
+        width: 10rem;
+    }
+
+    .logoSm {
+        width: 69%;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    
+    #mainNavbar:before {
+        width: 27%; 
+    }
+
+    .logoSm {
+        width: 68%;
+    }
+
+    .rt-block img{
+        width: 40%;
+    }
+
+    ul.filters {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+@media (min-width: 1366px) {
+
+    #mainNavbar {
+        width: 50%;
+        padding-left: 12rem;
+    }
+
+    #mainNavbar:before {
+        width: 29%; 
+    }
+
+    #mainNavbar .nav-link{
+        font-size: 19px;
+    }
+
+    .empty-box {
+        width: 10rem;
+    }
+
+    .logoSm {
+        width: 62%;
+    }
+
+    /* HOME SECTION */
+
+    .home-block {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* ARTIST SECTION */
+
+    #artist {
+        background: url(img/About/фон\ contact\ 1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .lft-block{
+        padding-left: 6rem;
+    }
+
+    .lft-block h3{
+        font-size: 30px;
+    }
+
+    .lft-block h5 {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        font-size: 25px;
+    }
+
+    .rt-block {
+        padding-top: 1rem;
+    }
+    
+    .text-block {
+        padding: 1rem;
+        background: #FFFFEA;
+        border-radius: 10px;
+        width: 80%;
+    }
+    
+    .rt-block p{
+        font-size: 15px;
+        color: #414141;
+    }
+
+    .rt-block h5{
+        font-size: 25px;
+    }
+      
+    .about-smlogo{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .education {
+        padding-right: 1rem;
+    }
+    
+    .education p{
+        padding-top: 1px;
+    }
+    
+    /* FILTERS */
+
+    .container {
+        padding-top: 4rem;
+    }
+
+    
+    ul.filters {
+        padding-bottom: 3rem;
+    }
+
+    ul.filters > li > a{
+        font-size: 18px;
+    }
+}
+
+
+@media (min-width: 1920px) {
+
+    #mainNavbar {
+        padding-left: 18rem;
+    }
+
+    #mainNavbar:before {
+        width: 45%; 
+    }
+
+    .logoSm {
+        width: 44%;
+    }
+
+    .empty-box {
+        width: 10rem;
+    }
+
+    /* ARTIST SECTION */
+
+    .lft-block{
+        padding-left: 8rem;
+        padding-top: 1rem;
+    }
+    
+    .personal-photo{
+        width: 40%;
+    }
+
+    .lft-block h3{
+        font-size: 40px;
+    }
+
+    .lft-block h5 {
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    .rt-block {
+        padding-top: 2rem;
+    }
+    
+    .text-block {
+        padding: 1rem;
+        background: #FFFFEA;
+        border-radius: 10px;
+        width: 58%;
+    }
+    
+    .rt-block p{
+        font-size: 17px;
+    }
+    
+}
